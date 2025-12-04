@@ -14,13 +14,16 @@ PillSync is a production-grade, full-stack application designed to help users ma
 ## Project Screenshots
 
 ### Dashboard & Analytics  
-(Insert screenshot: `dashboard.png`)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/1f124fe3-98aa-48ac-9d7b-aaace759a0fa" />
+
 
 ### Medication Management  
-(Insert screenshot: `medications.png`)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ab228c9a-deb2-43e3-9474-d197069c2cb8" />
+
 
 ### Automated CloudFront Invalidations (AWS Lambda)  
-(Insert screenshot: `cloudfront-invalidation.png`)
+<img width="983" height="539" alt="image" src="https://github.com/user-attachments/assets/99b240f6-2362-4911-8558-701caf64d4b4" />
+
 
 ---
 
@@ -165,33 +168,33 @@ graph TB
 
 ## 1. Split-Domain Architecture
 
-**Problem:** Seamlessly connecting CloudFront frontend and EC2 backend.
-**Solution:** Split-horizon DNS: frontend via CloudFront, backend via EC2.
-**Result:** 70% cost reduction, <100ms load time worldwide.
+**Problem:** Seamlessly connecting CloudFront frontend and EC2 backend.<br>
+**Solution:** Split-horizon DNS: frontend via CloudFront, backend via EC2.<br>
+**Result:** 70% cost reduction, <100ms load time worldwide.<br>
 
 ## 2. CORS & Cross-Origin Security
 
-**Problem:** Authenticated React-to-Django requests across domains.
-**Solution:** Strict CORS policies, secure credentials, header forwarding.
-**Result:** Stable and secure communication.
+**Problem:** Authenticated React-to-Django requests across domains.<br>
+**Solution:** Strict CORS policies, secure credentials, header forwarding.<br>
+**Result:** Stable and secure communication.<br>
 
 ## 3. Infinite Auth Loop in React
 
-**Problem:** Token refresh loop causing browser crash.
-**Solution:** Deterministic state machine + isolated refresh interceptor.
-**Result:** Zero auth loops, clean fallback behavior.
+**Problem:** Token refresh loop causing browser crash.<br>
+**Solution:** Deterministic state machine + isolated refresh interceptor.<br>
+**Result:** Zero auth loops, clean fallback behavior.<br>
 
 ## 4. Background Task Reliability
 
-**Problem:** Celery workers died on EC2 reboot.
-**Solution:** Systemd service files with restart policies.
-**Result:** 99.9% reliability.
+**Problem:** Celery workers died on EC2 reboot.<br>
+**Solution:** Systemd service files with restart policies.<br>
+**Result:** 99.9% reliability.<br>
 
 ## 5. Automated CloudFront Cache Invalidation
 
-**Problem:** Manual invalidation slowed deployments.
-**Solution:** Lambda triggers on S3 PUT → triggers CloudFront invalidation.
-**Result:** CI/CD fully automated.
+**Problem:** Manual invalidation slowed deployments.<br>
+**Solution:** Lambda triggers on S3 PUT → triggers CloudFront invalidation.<br>
+**Result:** CI/CD fully automated.<br>
 
 ---
 
