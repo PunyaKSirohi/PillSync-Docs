@@ -239,8 +239,14 @@ PillSync/
 **Punya K Sirohi**
 
 Portfolio: [https://punyaksirohi.in](https://punyaksirohi.in)
+
+
 GitHub: [https://github.com/PunyaKSirohi](https://github.com/PunyaKSirohi)
+
+
 LinkedIn: [https://linkedin.com/in/punyaksirohi](https://linkedin.com/in/punyaksirohi)
+
+
 Email: [punyaksirohi@example.com](mailto:punyaksirohi@example.com)
 
 ---
